@@ -17,5 +17,7 @@
         "react"
     ],
     "rules": {
+        "react/jsx-runtime": 0,
+        "react/props-types": 0
     }
 }
