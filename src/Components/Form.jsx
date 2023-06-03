@@ -15,7 +15,7 @@ function handlerSubmit(e){
         animal: animal.trim(),
         nombre: nombreMascota,
     }
-
+    
     if(data.animal.length<3 || data.nombre.length<6){
         setErr('debe contener mas caracteres')
         handler()
@@ -26,7 +26,6 @@ function handlerSubmit(e){
     setAnimal("")
     setNombreMascota("")
 } 
-
     return (
         <div>
             <form id="form" action="" onSubmit={handlerSubmit}>
@@ -46,7 +45,7 @@ function handlerSubmit(e){
                 <button type='submit'>ENVIAR</button>
 
                 {err && <span id='msjErr'>{err}</span>}
-                
+
             </form>
         </div>
     )
